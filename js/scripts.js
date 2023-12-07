@@ -10,32 +10,54 @@ const arrayImg = [
 './img/05.webp'
 ];
 
-for( let i= 0; i< arrayImg.length; i++); {
-     
-const main = document.querySelector('main');
+
+
+
+for( let i= 0; i < arrayImg.length; i++) {
+    let itemImg = '';
+    itemImg += `
+                <div class="container-img d-flex align-items-center justify-content-center" >
+                        <div class="items">
+                            <img src="${arrayImg[0]}" alt="">
+                        </div>
+                </div> 
+    `;
+    
+    // if(i != 0 ){
+        
+    // }
+    document.querySelector('main').innerHTML = itemImg;    
+}
+
+
+let onScreen = 0;
+
+// const main = document.querySelector('main');
 // const newDiv = document.createElement('div');
 
-main.innerHTML += `
-<div class="container-img d-flex align-items-center justify-content-center" >
-            <div class="items active">
-                 <img src="./img/01.webp">
-            </div>
-            <div class="items d-none">
-                 <img src="./img/02.webp">
-            </div>
-            <div class="items d-none">
-                 <img src="./img/03.webp">
-            </div>
-            <div class="items d-none">
-                 <img src="./img/04.webp">
-            </div>
-            <div class="items d-none">
-                 <img src="./img/05.webp">
-            </div>
-</div> 
 
-`
-}
+
+// main.innerHTML += `
+// <div class="container-img d-flex align-items-center justify-content-center" >
+//             <div class="items active">
+//                  <img src="./img/01.webp">
+//             </div>
+//             <div class="items d-none">
+//                  <img src="./img/02.webp">
+//             </div>
+//             <div class="items d-none">
+//                  <img src="./img/03.webp">
+//             </div>
+//             <div class="items d-none">
+//                  <img src="./img/04.webp">
+//             </div>
+//             <div class="items d-none">
+//                  <img src="./img/05.webp">
+//             </div>
+// </div> 
+
+// `
+
 
 
 // ${arrayImg[i]}
