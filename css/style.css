@@ -1,12 +1,13 @@
-.container-img{
-    width: 1000px;
+.album-container{
+    width: 100%;
     height: 100vh;
-    margin: 0 auto;
 }
-.items{
-    width: 500px;  
-}
-
 img{
     width: 100%;
+}
+.album{
+    display: none;
+}
+.visual{
+    display: block;
 }
