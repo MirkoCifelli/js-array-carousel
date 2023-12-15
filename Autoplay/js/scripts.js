@@ -82,7 +82,29 @@ next.addEventListener("click", function(){
 })
 
 stop.addEventListener('click', function(){
+    if(clock != null){
+
     clearInterval(clock);
+
+    clock= null;
+    }
+    else{
+            clock = setInterval(() => {
+            carousel[counter].classList.remove('visual');
+        
+            if ( counter < arrayImg.length -1 ){
+        
+            counter ++;
+        
+            }
+            else{
+        
+            counter = 0;
+        
+            }
+            carousel[counter].classList.add('visual');
+        }, 3000);
+    }
 })
 
 previous.addEventListener("click", function(){
