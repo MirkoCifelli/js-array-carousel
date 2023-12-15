@@ -33,6 +33,7 @@ let slide = document.querySelector('#album').innerHTML = itemImg;
 
 let next = document.getElementById('next');
 let previous = document.getElementById('previous');
+let stop = document.getElementById('stop');
 
 
 
@@ -77,15 +78,15 @@ next.addEventListener("click", function(){
 
     }
     carousel[counter].classList.add('visual');
+    // clearInterval(clock);
+})
+
+stop.addEventListener('click', function(){
     clearInterval(clock);
-}
-
-)
-
-
+})
 
 previous.addEventListener("click", function(){
-    
+
     carousel[counter].classList.remove('visual');
 
     if ( counter != 0){
